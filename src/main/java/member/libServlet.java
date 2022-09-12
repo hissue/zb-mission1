@@ -51,7 +51,6 @@ public class libServlet extends HttpServlet {
 		String LAT = request.getParameter("LAT");
 		String LNT = request.getParameter("LNT");
 		
-		String dis="";
 //		System.out.println(command);
 
 //		if(LAT.equals("null") || LNT.equals("null")) {
@@ -67,7 +66,6 @@ public class libServlet extends HttpServlet {
 			if(command.equals("근처 WIFI 정보 보기")) {
 				
 				data.dbInsert(LAT, LNT);
-				
 				
 				
 				// 20개 map 형식으로 출력

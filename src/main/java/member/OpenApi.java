@@ -102,7 +102,7 @@ public class OpenApi {
         	}
         	st +=500;
         	end=st+500;
-        	Thread.sleep(1);
+        	Thread.sleep(10);
     	}
     	
     	}catch(Exception e){

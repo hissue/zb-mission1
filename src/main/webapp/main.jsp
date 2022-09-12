@@ -26,6 +26,7 @@
 <h1>와이파이 정보 구하기</h1>
 </head>
 <body>
+
 <div>
 <ul>
 <li><a href="main.jsp">홈</a></li>
@@ -39,17 +40,19 @@
 </ul> 
 </div>
 <div>
-<form method="get" action="lib.do">
+<form method="get" action="lib.do" name ="sm">
 LAT: <input type=text value=<%if(request.getAttribute("LAT")==null){%>
 	<%="0.0"%>
 <% }else{%>
 	<%=request.getAttribute("LAT")%>
-	<%}%> name="LAT" />, LNT: <input type=text value=<%if(request.getAttribute("LNT")==null){%>
+	<%}%> name="LAT" id = "idA"/>,
+	
+	 LNT: <input type=text value=<%if(request.getAttribute("LNT")==null){%>
 	<%="0.0"%>
 <% }else{%>
 	<%=request.getAttribute("LNT")%>
-	<%}%>  name="LNT" />
-<input type="submit" value="내 위치 가져오기" name="ground">
+	<%}%>  name="LNT" id="idB"/>
+<input type="submit" value="내 위치 가져오기" name="Geolocation" />
 <!-- <input type="button" onclick="command=click" value="근처 WIFI 정보 보기" > -->
 <input type="submit" value="근처 WIFI 정보 보기" name="command">
 </form>

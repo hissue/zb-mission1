@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <title>와이파이 정보 구하기</title>
+
+
+
 </head>
 <script type="text/javascript" src="./js/getHistoryData.js"></script>
 <h1>위치 히스토리 목록</h1>
